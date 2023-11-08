@@ -45,6 +45,11 @@ const Layout: FC<LayoutProps> = ({ children, onSearch }) => {
               className="mt-2 p-2 shadow menu menu-compact dropdown-content rounded-box w-48 bg-zinc-300 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-300"
             >
               <li>
+                <Link to="/categori" className="md:hidden">
+                  Categories
+                </Link>
+              </li>
+              <li>
                 <Link to="/favorite" className="md:hidden">
                   Favorites
                 </Link>
@@ -69,6 +74,13 @@ const Layout: FC<LayoutProps> = ({ children, onSearch }) => {
           >
             CINEMAX
           </Link>
+          <Link
+            to="/categori"
+            className="justify-center normal-case font-[1000] text-xl text-white-600 hidden md:flex md:ml-5"
+          >
+            Category
+          </Link>
+          
         </div>
         <div className="navbar-center">
           <Link
